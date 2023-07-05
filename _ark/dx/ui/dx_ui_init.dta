@@ -1,0 +1,8 @@
+;{do
+;   {toggle_autoplay 0}}
+   
+;{do
+;   {toggle_autoplay 1}}
+   
+;{do
+;   {gesture_mgr toggle_pause_on_skeleton_loss}}
