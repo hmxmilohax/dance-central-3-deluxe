@@ -12,6 +12,15 @@ _build/gen/main_xbox_6.ark
 _build/gen/patch_xbox.hdr
 _build/gen/patch_xbox_0.ark
 dependencies/Mackiloha-master.zip
+dependencies/linux/arkhelper
+dependencies/linux/dtab
+dependencies/linux/superfreq
+dependencies/macOS/arkhelper
+dependencies/macOS/dtab
+dependencies/macOS/superfreq
+dependencies/windows/arkhelper.exe
+dependencies/windows/dtab.exe
+dependencies/windows/superfreq.exe
 _xenia/xenia.log
 _build/patch_xbox.hdr
 _build/patch_xbox_0.ark
