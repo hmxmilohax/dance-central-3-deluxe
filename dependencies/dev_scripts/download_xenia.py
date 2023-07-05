@@ -35,19 +35,6 @@ def create_portable_file(directory):
         with open(portable_file, "w") as f:
             pass
 
-def download_patch_file(destination_dir):
-
-    url = "https://raw.githubusercontent.com/xenia-canary/game-patches/main/patches/45410914%20-%20Rock%20Band%203%20TU5.patch.toml"
-    response = requests.get(url)
-    response.raise_for_status()
-
-    patches_folder = destination_dir / "patches"
-    patches_folder.mkdir(parents=True, exist_ok=True)
-
-    patch_file_path = patches_folder / "45410914 - Rock Band 3 TU5.patch.toml"
-    with open(patch_file_path, "wb") as f:
-        f.write(response.content)
-
 def extract_zip(zip_path, destination):
     with zipfile.ZipFile(zip_path, "r") as zip_ref:
         zip_ref.extractall(destination)
@@ -56,21 +43,6 @@ def update_toml_line(line, prefix, desired_value):
     if line.startswith(prefix):
         return f"{prefix} {desired_value}\n"
     return line
-
-def update_patch_file(patch_file_path):
-    lines_to_update = ["    is_enabled = true"]
-
-    with open(patch_file_path, "r") as f:
-        lines = f.readlines()
-
-    with open(patch_file_path, "w") as f:
-        for i, line in enumerate(lines):
-            if line.strip() == 'author = "InvoxiPlayGames"' and i < len(lines) - 1:
-                next_line = lines[i + 1].strip()
-                if next_line != "is_enabled = true":
-                    lines[i + 1] = "    is_enabled = true\n"
-
-            f.write(lines[i])
 
 def modify_config_file(config_path):
     with open(config_path, "r") as f:
@@ -120,14 +92,9 @@ def setup_xenia():
 
     create_portable_file(destination_dir)
 
-    download_patch_file(destination_dir)
-
     # Download x360ce_x64.zip
     x360ce_url = "https://emutopia.com/index.php?option=com_cobalt&task=files.download&tmpl=component&id=12279&fid=20&fidx=3&rid=541&return=aHR0cHM6Ly9lbXV0b3BpYS5jb20vaW5kZXgucGhwL2VtdWxhdG9ycy9pdGVtLzI0MC1nYW1lcGFkcy81NDEteDM2MGNl"
     download_and_extract_x360ce(x360ce_url, destination_dir)
-
-    patch_file_path = destination_dir / "patches" / "45410914 - Rock Band 3 TU5.patch.toml"
-    update_patch_file(patch_file_path)
 
     # Fetch the latest release information
     release_info = fetch_latest_release_info()

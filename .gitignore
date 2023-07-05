@@ -36,3 +36,10 @@ _xenia/xinput9_1_0.dll
 _build/gen/main_xbox
 _xenia/recent.toml
 dx.dta
+_xenia/LICENSE
+_xenia/portable.txt
+_xenia/x360ce_source.txt
+_xenia/x360ce_x64.exe
+_xenia/xenia-canary.config.toml
+_xenia/xenia_canary_commit_hash.txt
+_xenia/xenia_canary.exe

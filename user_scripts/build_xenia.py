@@ -15,5 +15,5 @@ if not download_mackiloha():
 if build_patch_ark(True):
     print("Checking for updates to Xenia Canary")
     setup_xenia()
-    cmd_xenia = "_xenia\\xenia_canary.exe _build\\xbox\\default.xex"
+    cmd_xenia = "_xenia\\xenia_canary.exe _build\\default.xex"
     subprocess.run(cmd_xenia, shell=True, cwd="..")
