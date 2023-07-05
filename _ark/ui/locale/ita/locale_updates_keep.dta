@@ -1,0 +1,18 @@
+(beginner
+   "<altb>Principiante</alt>")
+(beginner_title
+   "PRINCIPIANTE")
+(challenge_auto_updated
+   "Feed Sfide aggiornato!")
+(identity_recognized
+   "%s riconosciuto! Alza le mani per cambiare profilo giocatore.")
+(leaderboards_title
+   "Classifiche Esibizione")
+(option_freestyle_desc
+   "Attiva o disattiva le sezioni freestyle in modalità Esibizione. La modifica non avrà effetto sui brani del primo Dance Central.")
+(practice_choose
+   "<altb>Seleziona i passi</alt>")
+(tutorial_bid_select_title
+   "Seleziona i passi")
+(gameplay_title
+   "Balla")

@@ -1,0 +1,50 @@
+(campaign_masterquest_title
+   "Meister-Mission")
+(campaign_master_quest_title
+   "Meister-Mission")
+(challenge_auto_updated
+   "Herausforderungs-Feed aktualisiert!")
+(dci
+   "DCI-<altb>Hauptquartier</alt>")
+(dci_title
+   "DCI-Hauptquartier")
+(hb_crazedeciphered100pct_00s
+   "<alt>Kulttanz entschlüsselt: 100 %</alt>.\n Der Kulttanz ist:\n <alt>Cupid Shuffle</alt>")
+(hb_crazedeciphered100pct_10s
+   "<alt>Kulttanz entschlüsselt: 100 %</alt>.\n Der Kulttanz</alt> ist:\n <alt>Scream</alt>")
+(hb_crazedeciphered100pct_70s
+   "<alt>Kulttanz entschlüsselt: 100 %</alt>.\n Der Kulttanz</alt> ist:\n <alt>The Hustle</alt>")
+(hb_crazedeciphered100pct_80s
+   "<alt>Kulttanz entschlüsselt: 100 %</alt>.\n Der Kulttanz</alt> ist:\n <alt>Electric Slide</alt>")
+(hb_crazedeciphered100pct_90s
+   "<alt>Kulttanz entschlüsselt: 100 %</alt>.\n Der Kulttanz</alt> ist:\n <alt>Macarena</alt>")
+(houseparty_title
+   "NUR EINGELADENE")
+(new_era_completed_campaign_00s_disp
+   "2000er abgeschl.")
+(new_era_completed_campaign_10s_disp
+   "2010er abgeschl.")
+(new_era_completed_campaign_70s_disp
+   "1970er abgeschl.")
+(new_era_completed_campaign_80s_disp
+   "1980er abgeschl.")
+(new_era_completed_campaign_90s_disp
+   "1990er abgeschl.")
+(random_crew_title
+   "Zufallscrew")
+(resume_party
+   "<altb>Partytime fortsetzen</altb>")
+(resume_throwdown
+   "Crew-<altb>Showdown fortsetzen</altb>")
+(rollerrink_title
+   "INLINER-DISCO")
+(sorted_by
+   "<altb>SORTIEREN NACH</alt>")
+(tutorial_party_enable_commands_title
+   "Sag \qXbox\q")
+(tutorial_voice_commands_text
+   "Helles Wort unter Schwarzlicht = Sprachbefehl.")
+(venue_dci
+   "DCI-<altb>Hauptquartier</alt>")
+(gameplay_title
+   "Tanz")

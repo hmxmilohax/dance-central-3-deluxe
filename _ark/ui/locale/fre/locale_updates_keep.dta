@@ -1,0 +1,20 @@
+(challenge_auto_updated
+   "Liste des défis mise à jour !")
+(era01_intro
+   "<altb>Dossier équipe Lu$h</alt>")
+(era02_intro
+   "<altb>Dossier Hi-Def</alt>")
+(era03_intro
+   "<altb>Dossier Flash4wrd</alt>")
+(era04_intro
+   "<altb>Dossier Riptide</alt>")
+(pausecommand_quit
+   "Retour à la <altb>sélectionner chanson</alt>")
+(skillz_encourage_campaign_finale
+   "Presque ! Tu dois obtenir au moins 3 étoiles sur cette chanson pour continuer.")
+(streetside
+   "<altb>TOP ROCK AV.</alt>")
+(streetside_title
+   "TOP ROCK AV.")
+(gameplay_title
+   "Danse")

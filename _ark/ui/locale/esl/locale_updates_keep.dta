@@ -1,0 +1,22 @@
+(bam_winner_left
+   "Ha ganado\nel <alt>jugador izquierdo</alt>")
+(bam_winner_right
+   "Ha ganado\nel <alt>jugador derecho</alt>")
+(bam_winner_tie
+   "<alt>Empate</alt>")
+(challenge_auto_updated
+   "¡Registro de desafíos actualizado!")
+(challenges
+   "<altb>DESAFÍOS LIVE</alt>")
+(dclive_title
+   "ESTUDIO 675")
+(random_crew_title
+   "Equipo aleatorio")
+(rollerrink_title
+   "PISTA DE PATINAJE")
+(select_crew_title
+   "Cambiar de equipo")
+(song_info_last_battle
+   "Última vez")
+(gameplay_title
+   "Bailar")
