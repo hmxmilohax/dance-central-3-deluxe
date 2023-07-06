@@ -3,7 +3,7 @@
    meta_loading
    (helpbar_allow_controller FALSE)
    (hide_letterbox TRUE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {game_screen set mic_removed_mid_setlist FALSE}
       {synth stop_all_sfx TRUE}
       {if

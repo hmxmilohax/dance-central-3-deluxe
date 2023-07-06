@@ -46,7 +46,7 @@
    (primary_player_index 0)
    (player_index 0)
    (song_name '')
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {set
          [song_name]
          {meta_performer get_song}}
@@ -153,7 +153,7 @@
    challenge_perform_result_screen
    (panels meta_game background_confirmation_panel challenge_result_panel)
    (focus challenge_result_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {voice_input_panel activate_voice_context continue_screen})
    (on_voice_command
       ($command)
@@ -189,7 +189,7 @@
       {$this set is_photos_timed_out FALSE}
       {$this set continue_to_next_screen FALSE})
    (finish_load)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {hamprovider set ui_nav_mode results}
       ENDGAME_PANEL_COMMON_ENTER
       {meta_performer add_sink $this}
@@ -808,7 +808,7 @@
    (show_hand_help FALSE)
    (is_enabled TRUE)
    (callback_panel 0)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {print
          "perform_continue_panel enter: in_ctl="
          {shell_input in_controller_mode}
@@ -881,7 +881,7 @@
    (file
       "playlist_nextsong.milo")
    (song_name '')
-   (enter)
+   (enter DX_NO_MENU_MOTIONBLUR )
    (update_info
       {$this
          set_song
@@ -979,7 +979,7 @@
          {shell_input in_controller_mode}})
    (helpbar_confirm_label skip)
    (show_hand_help FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {right_hand.hnl
          set
          showing
@@ -1005,7 +1005,7 @@
    (pending_practice FALSE)
    (pending_quit FALSE)
    (handle_global_commands TRUE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {if_else
          {'||'
             [pending_quit]
@@ -1070,7 +1070,7 @@
          {!
             {ui is_letterbox_in_transition}}
          SLIDE_RIGHT_LIST_ITEM})
-   (enter_practice
+   (enter DX_NO_MENU_MOTIONBLUR _practice
       {meta music_stop}
       {fade_out.flow activate}
       {meta_performer
@@ -1248,7 +1248,7 @@
    (focus perform_endgame_panel)
    (use_continue_panel FALSE)
    (has_continue_panel FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {if_else
          {hamprovider get is_in_pre_party_mode}
          {perform_endgame_panel set complete_screen party_mode_choose_mode_screen}
@@ -1260,7 +1260,7 @@
    (focus perform_continue_panel)
    (use_continue_panel FALSE)
    (has_continue_panel TRUE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {perform_endgame_panel prepare_for_awards_display}
       {voice_input_panel activate_voice_context continue_screen})
    (on_voice_command
@@ -1275,7 +1275,7 @@
    (focus perform_continue_panel)
    (use_continue_panel TRUE)
    (has_continue_panel TRUE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {xp_overlay_panel
          set
          suppress_display
@@ -1298,7 +1298,7 @@
    (focus perform_endgame_panel)
    (use_continue_panel FALSE)
    (has_continue_panel FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {xp_overlay_panel
          set
          suppress_display
@@ -1312,7 +1312,7 @@
    (focus perform_endgame_panel)
    (use_continue_panel FALSE)
    (has_continue_panel FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {perform_endgame_panel set complete_screen dancebattle_perform_complete_screen})}
 {new
    HamScreen
@@ -1327,7 +1327,7 @@
    (panels meta_game perform_endgame_panel xp_overlay_panel fitness_keepmoving_panel)
    (use_continue_panel FALSE)
    (has_continue_panel FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {if_else
          {meta_performer is_last_song}
          {if_else
@@ -1353,7 +1353,7 @@
    (use_continue_panel FALSE)
    (has_continue_panel FALSE)
    (moving_on FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta_performer continue_playlist}
       {set
          [moving_on]
@@ -1378,7 +1378,7 @@
    (timer 0.0)
    (timer_int 0)
    (prev_timer_int 0)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta_performer continue_playlist}
       {if_else
          {gamemode in_mode infinite_playlist_perform}
@@ -1430,7 +1430,7 @@
    HamScreen
    endgame_restart_screen
    (panels meta_game)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta_performer restart}
       {game_restart})}
 {new
@@ -1439,7 +1439,7 @@
    (panels meta_game perform_complete_panel playlist_loading_spinner_panel)
    (focus playlist_loading_spinner_panel)
    (provider provider_playlist.hnp)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {ui goto_screen playlist_restart_preload_screen})}
 {new
    HamPanel
@@ -1484,14 +1484,14 @@
    (focus playlist_loading_spinner_panel)
    (use_continue_panel FALSE)
    (has_continue_panel FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {ui goto_screen playlist_nextsong_loading_game_screen})}
 {new
    HamScreen
    infinite_playlist_nextsong_loading_screen
    (panels meta_game infinite_playlist_nextsong_panel playlist_loading_spinner_panel playlist_loading_panel)
    (focus playlist_loading_spinner_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {ui goto_screen infinite_playlist_nextsong_loading_game_screen})}
 {new
    HamScreen
@@ -1499,7 +1499,7 @@
    (panels meta_game perform_complete_panel playlist_loading_spinner_panel playlist_loading_panel)
    (focus playlist_loading_spinner_panel)
    (provider provider_playlist.hnp)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {ui goto_screen playlist_restart_loading_game_screen})}
 {new
    HamScreen
@@ -1509,7 +1509,7 @@
    (use_continue_panel FALSE)
    (has_continue_panel FALSE)
    (moving_on FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {set
          [moving_on]
          FALSE})
@@ -1529,7 +1529,7 @@
    infinite_playlist_nextsong_loading_game_screen
    (panels meta_game infinite_playlist_nextsong_panel playlist_loading_spinner_panel playlist_loading_game_panel)
    (focus playlist_loading_spinner_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_stop}
       {game_restart})}
 {new
@@ -1538,7 +1538,7 @@
    (panels meta_game perform_complete_panel playlist_loading_spinner_panel playlist_loading_game_panel)
    (focus playlist_loading_spinner_panel)
    (provider provider_playlist.hnp)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {game_restart})}
 {new
    PreloadPanel
@@ -1559,14 +1559,14 @@
    (focus playlist_preload_panel)
    (use_continue_panel FALSE)
    (has_continue_panel FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {playlist_preload_panel set loading_screen playlist_nextsong_loading_screen})}
 {new
    HamScreen
    infinite_playlist_nextsong_preload_screen
    (panels meta_game infinite_playlist_nextsong_panel playlist_loading_spinner_panel playlist_preload_panel)
    (focus playlist_preload_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {playlist_preload_panel set loading_screen infinite_playlist_nextsong_loading_screen})}
 {new
    HamScreen
@@ -1574,14 +1574,14 @@
    (panels meta_game perform_complete_panel playlist_loading_spinner_panel playlist_preload_panel)
    (focus playlist_preload_panel)
    (provider provider_playlist.hnp)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {playlist_preload_panel set loading_screen playlist_restart_loading_screen})}
 {new
    HamPanel
    perform_endgame_popup_underneath
    (file empty_screen.milo)
    (current_popup none)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {set
          [current_popup]
          none})
@@ -1637,7 +1637,7 @@
          {hamprovider get is_in_campaign_master_quest_mode}
          provider_perform_masterquest.hnp
          provider_perform.hnp})
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {voice_input_panel activate_voice_context perform_complete_screen})
    (handle_restart_selected
       {perform_complete_panel on_restart})}
@@ -1653,7 +1653,7 @@
             {meta_performer get_playlist_index}}
          provider_campaign_outro_fail.hnp
          provider_campaign_outro_fail_norehearse.hnp})
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {print
          "[EH] BZ-64344 campaign_outro_fail_screen enter\n"}
       {hamprovider set merge_moves 0}
@@ -1694,7 +1694,7 @@
    (focus perform_continue_panel)
    (use_continue_panel FALSE)
    (has_continue_panel FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {do
          ($cur_song
             {gamedata get song})
@@ -1709,7 +1709,7 @@
    (focus perform_continue_panel)
    (use_continue_panel FALSE)
    (has_continue_panel FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {campaign set work_it_active FALSE}
       {meta_performer award_craze_accomplishments}
       {meta_performer award_master_quest_accomplishments}
@@ -1765,7 +1765,7 @@
          {shell_input in_controller_mode}})
    (helpbar_confirm_label continue)
    (show_hand_help FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {right_hand.hnl
          set
          showing
@@ -1806,7 +1806,7 @@
    HamScreen
    campaign_perform_endgame_standard_exit_screen
    (panels meta_game endgame_delay_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {shell_input exit_controller_mode}
       {ui pop_screen meta_loading_continue_screen})}
 {new
@@ -1815,7 +1815,7 @@
    (panels meta_game background_panel perform_complete_panel)
    (focus perform_complete_panel)
    (provider provider_campaign_intro_fail.hnp)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {voice_input_panel activate_voice_context perform_complete_screen})
    (handle_campaign_intro_fail_retry
       {print
@@ -1841,7 +1841,7 @@
    HamScreen
    campaign_intro_initiate_retry
    (panels meta_game)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {shell_input exit_controller_mode}
       {meta_performer repeat_current_playlist_song}
       {update_campaign_work_it_flag}
@@ -1851,7 +1851,7 @@
    HamScreen
    campaign_intro_initiate_abort
    (panels meta_game)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {shell_input exit_controller_mode}
       {ui goto_screen main_screen})}
 {new
@@ -1883,7 +1883,7 @@
    playlist_widget_panel
    (file
       "playlist_widget.milo")
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {screentitle.lbl
          set_prelocalized_string
          {meta_performer get_playlist_name_and_duration}}
@@ -1896,7 +1896,7 @@
    (panels meta_game background_panel perform_complete_panel fitness_info_panel playlist_widget_panel)
    (focus perform_complete_panel)
    (provider provider_playlist.hnp)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {if_else
          {is_active_profile_in_fitness_mode}
          {playlist_widget_panel set_showing FALSE}
@@ -1913,7 +1913,7 @@
    (panels meta_game background_panel perform_complete_panel)
    (focus perform_complete_panel)
    (provider provider_dancebattle.hnp)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {voice_input_panel activate_voice_context perform_complete_screen})
    (handle_restart_selected
       {perform_complete_panel on_restart})}
@@ -1923,7 +1923,7 @@
    (panels background_confirmation_panel dialog_panel)
    (focus dialog_panel)
    (return_screen '')
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {dialog_panel set_ok_no confirm_practice TRUE})
    (NAV_SELECT_MSG
       {switch
@@ -1939,7 +1939,7 @@
    (panels perform_complete_panel background_confirmation_panel dialog_panel)
    (focus dialog_panel)
    (return_screen '')
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {dialog_panel set_ok_no confirm_quit_finale TRUE}
       {voice_input_panel activate_voice_context yes_no_confirm_screen})
    (NAV_SELECT_MSG
@@ -1960,7 +1960,7 @@
    (focus dialog_panel)
    (okay_to_flaunt 0)
    (kick_out_on_sign_out TRUE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {memcardmgr
          add_sink
          $this
@@ -2037,7 +2037,7 @@
    (queue_xsocial_query FALSE)
    (added_share_photon_option FALSE)
    (ui_provider)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {hamprovider set ui_nav_mode title}
       {profile_mgr
          add_sink
@@ -2453,7 +2453,7 @@
    perform_final_results_screen
    (panels meta_game background_endgame_panel perform_final_results_panel)
    (focus perform_final_results_panel)
-   (enter)}
+   (enter DX_NO_MENU_MOTIONBLUR )}
 {new
    HamScreen
    fake_party_endgame_screen

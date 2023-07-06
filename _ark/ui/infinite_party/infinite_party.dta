@@ -59,7 +59,7 @@
    infinite_party_mode_confirm_quit_to_main_menu_screen
    (panels dialog_panel)
    (back_screen '')
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {dialog_panel set_ok_no confirm_quit_mainmenu_short TRUE})
    (NAV_SELECT_MSG
       {switch
@@ -105,7 +105,7 @@
          {partymode_mgr is_custom_party}
          screen_name_mode_select
          screen_name_title})
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {right_hand.hnl
          set
          showing
@@ -177,7 +177,7 @@
    fake_infinite_party_confirmation_screen
    (panels infinite_party_confirmation_panel infinite_party_wait_for_content_panel meta sync_party_with_rc_panel)
    (focus sync_party_with_rc_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {enter_infinite_party_mode})}
 {new
    HamPanel
@@ -213,7 +213,7 @@
    (panels meta background_panel infinite_party_mode_branch_panel party_mode_options_info_panel)
    (focus infinite_party_mode_branch_panel)
    (back choose_mode_screen)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_start}
       {party_mode_options_info_panel refresh}
       {voice_input_panel activate_voice_context party_mode_branch_screen})
@@ -267,7 +267,7 @@
       (away away))
    (waiting_for_hi_five FALSE)
    (smart_glass_connected FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {set
          [song_name]
          ''}
@@ -1125,7 +1125,7 @@
    (hide_letterbox FALSE)
    (can_change_song TRUE)
    (enable_change_song_mode TRUE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {set
          [can_change_song]
          TRUE}
@@ -1298,7 +1298,7 @@
    (focus infinite_party_skip_nextsong_panel)
    (back main_screen)
    (shell_pause_return_time 30.0)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_stop}
       {infinite_party_hub_panel reset_loading}
       {infinite_party_hub_panel goto_next_song_and_mode}
@@ -1414,20 +1414,20 @@
    infinite_party_hub_preload_screen
    (panels meta_game infinite_party_hub_panel playlist_loading_spinner_panel playlist_preload_panel)
    (focus playlist_preload_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {playlist_preload_panel set loading_screen infinite_party_hub_loading_screen})}
 {new
    HamScreen
    infinite_party_hub_loading_screen
    (panels meta_game infinite_party_hub_panel playlist_loading_spinner_panel playlist_loading_panel)
    (focus playlist_loading_spinner_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {ui goto_screen infinite_party_hub_loading_game_screen})}
 {new
    HamScreen
    infinite_party_hub_loading_game_screen
    (panels meta_game infinite_party_hub_panel playlist_loading_spinner_panel playlist_loading_game_panel)
    (focus playlist_loading_spinner_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_stop}
       {game_restart})}

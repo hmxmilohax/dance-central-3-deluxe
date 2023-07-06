@@ -38,7 +38,7 @@
    (allow_cancel FALSE)
    (task)
    (upload_task)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {set
          [allow_cancel]
          FALSE}
@@ -105,7 +105,7 @@
             {gesture_mgr num_snapshots}
             1}
          {- $index 1}})
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {right_hand.hnl set_controller_focus 0}
       {do
          ($max_index
@@ -159,7 +159,7 @@
    (tex_index 0)
    (allow_voice_control FALSE)
    (kick_out_on_sign_out TRUE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {photo.mat
          set
          diffuse_tex
@@ -185,7 +185,7 @@
    endgame_photos_upload_screen
    (panels endgame_photos_frame_panel background_confirmation_panel endgame_photos_upload_panel dialog_panel)
    (focus endgame_photos_upload_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {endgame_photos_upload_panel
          set
          texture
@@ -214,7 +214,7 @@
    (focus dialog_panel)
    (msg_token '')
    (allow_voice_control FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {dialog_panel
          set_ok
          [msg_token]
@@ -229,7 +229,7 @@
    (back
       {endgame_photos_screen get back_screen})
    (back_screen none)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {voice_input_panel activate_voice_context ''})}
 {new
    HamScreen
@@ -239,7 +239,7 @@
    (back
       {endgame_photos_frame_screen get back_screen})
    (back_screen endgame_photos_screen)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {voice_input_panel activate_voice_context ''})}
 {new
    HamScreen
@@ -250,7 +250,7 @@
    (confirm_token kinectshare_confirm_really)
    (cancel_token no)
    (profile '')
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {set
          [profile]
          {profile_mgr get_active_profile}}

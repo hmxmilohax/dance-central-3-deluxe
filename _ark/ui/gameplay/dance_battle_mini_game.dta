@@ -48,7 +48,7 @@
    (jump_end -1)
    (jump_diff 0)
    (omg_scores_awarded FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       ($music_start_measure $music_end_measure $play_start_measure $play_end_measure $scored_moves)
       {$hamdirector start_stop_visualizer 1 1}
       {hamprovider

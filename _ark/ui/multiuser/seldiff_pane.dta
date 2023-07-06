@@ -1,7 +1,7 @@
 {new
    Object
    seldiff_pane
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       ($side)
       {do
          ($diff_pro

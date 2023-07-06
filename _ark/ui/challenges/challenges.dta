@@ -12,7 +12,7 @@
    (playlist_mode FALSE)
    (dlc_song_title
       "")
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {set
          [dlc_song_title]
          ""}
@@ -203,7 +203,7 @@
          (event_dialog_dismiss)})
    (finish_load
       {content_loading_panel allowed_to_show FALSE})
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {$this set storage_changed_error FALSE}
       {profile_mgr clear_critical_profile}
       {profile_mgr
@@ -633,7 +633,7 @@
    (download_type 0)
    (wait_until_rc_online FALSE)
    (timer kRockCentralConnectionTimeout)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {song_info_challenge_panel set_showing FALSE}
       {{challenge_feed_panel find player_xp.grp}
          set_showing
@@ -709,7 +709,7 @@
    (panels background_confirmation_panel dialog_panel)
    (focus dialog_panel)
    (timer 30.0)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {song_info_challenge_panel set_showing FALSE}
       {{challenge_feed_panel find player_xp.grp}
          set_showing

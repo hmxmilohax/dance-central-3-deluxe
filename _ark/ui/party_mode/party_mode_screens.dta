@@ -81,7 +81,7 @@
    party_mode_confirm_quit_to_main_menu_screen
    (panels dialog_panel)
    (back_screen '')
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {dialog_panel set_ok_no confirm_quit_mainmenu_short TRUE})
    (NAV_SELECT_MSG
       {switch
@@ -115,7 +115,7 @@
          {shell_input in_controller_mode}})
    (helpbar_confirm_label continue)
    (show_hand_help FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {right_hand.hnl
          set
          showing
@@ -142,7 +142,7 @@
    (back_token back)
    (show_hand_help TRUE)
    (hide_letterbox FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {right_hand.hnl
          set
          showing
@@ -170,7 +170,7 @@
    (panels background_panel party_mode_confirmation_panel party_mode_confirmation_swipe_panel meta)
    (focus party_mode_confirmation_swipe_panel)
    (back choose_mode_screen)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_start})
    (on_voice_command
       ($command)
@@ -184,7 +184,7 @@
    (hide_letterbox FALSE)
    (hide_helpbar TRUE)
    (allow_doubleuser_swipe TRUE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {right_hand.hnl set showing TRUE}
       {right_hand.hnl enable_selection}
       {if_else
@@ -247,7 +247,7 @@
    party_mode_welcome_screen
    (panels background_panel party_mode_welcome_panel meta)
    (focus party_mode_welcome_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_start}
       {cursor_panel change_depth_colors_to_wrangler}
       {cursor_panel reset_sided_colors}
@@ -274,7 +274,7 @@
    (wrangle_players_first_time TRUE)
    (trigger_wrangle_players_timer_on TRUE)
    (trigger_wrangle_players_timer 1.0)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {set
          [wrangle_players_first_time]
          TRUE}
@@ -720,7 +720,7 @@
    party_mode_hub_screen
    (panels background_panel party_mode_hub_panel meta)
    (focus party_mode_hub_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_start}
       {gesture_mgr set_identification_enabled FALSE})
    (TRANSITION_COMPLETE_MSG
@@ -742,8 +742,8 @@
    (time 3.0)
    (timer)
    (done FALSE)
-   (enter_flow_started FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR _flow_started FALSE)
+   (enter DX_NO_MENU_MOTIONBLUR 
       {set
          [done]
          FALSE}
@@ -979,7 +979,7 @@
    party_mode_standings_screen
    (panels party_mode_standings_panel party_mode_standings_continue_panel meta)
    (focus party_mode_standings_continue_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_start}
       {party_mode_hub_panel set first_time_enter FALSE}
       {party_mode_standings_continue_panel set_showing FALSE}
@@ -990,7 +990,7 @@
    party_mode_rematch_panel
    (file
       "party_mode_rematch.milo")
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {voice_input_panel activate_voice_context crew_showdown_rematch_screen})
    SELECT_RIGHT_LIST_TOKEN
    (poll SLIDE_RIGHT_LIST_ITEM)
@@ -1024,7 +1024,7 @@
       "party_mode_showdown_intro.milo")
    (hide_letterbox FALSE)
    (moving_on FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {set
          [moving_on]
          FALSE})
@@ -1044,7 +1044,7 @@
    party_mode_showdown_intro_screen
    (panels party_mode_showdown_intro_panel meta)
    (focus party_mode_showdown_intro_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_start})}
 {new
    HamPanel
@@ -1053,7 +1053,7 @@
       "party_mode_showdown_instructions.milo")
    (hide_letterbox FALSE)
    (moving_on FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {set
          [moving_on]
          FALSE})
@@ -1078,7 +1078,7 @@
    party_mode_showdown_instructions_screen
    (panels party_mode_showdown_instructions_panel meta)
    (focus party_mode_showdown_instructions_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_start})}
 {new
    HamPanel
@@ -1089,7 +1089,7 @@
    (helpbar_allow_controller TRUE)
    (back_token back)
    (hide_letterbox FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {party_mode_seldiff_panel
          set_provider
          {party_mode_seldiff_panel find crew_challenge_provider.hnp}}
@@ -1146,7 +1146,7 @@
    (s1_present FALSE)
    (use_gamertag_bg TRUE)
    (hide_letterbox FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {player_provider_1
          add_sink
          $this
@@ -1458,7 +1458,7 @@
    (helpbar_allow_controller TRUE)
    (back_token screen_name_mode_select)
    (hide_letterbox FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {voice_input_panel activate_voice_context crew_showdown_branch_screen})
    SELECT_RIGHT_LIST_TOKEN
    (poll SLIDE_RIGHT_LIST_ITEM)
@@ -1492,7 +1492,7 @@
    party_mode_options_info_panel
    (file
       "party_mode_options_info.milo")
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {partymode_mgr smart_glass_listen 1})
    (exit
       {partymode_mgr smart_glass_listen 0})
@@ -1563,7 +1563,7 @@
    (focus dialog_panel)
    (back choose_mode_screen)
    (handle_global_commands TRUE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_start}
       {if_else
          {&&
@@ -1591,7 +1591,7 @@
    (focus party_mode_branch_panel)
    (back choose_mode_screen)
    (handle_global_commands TRUE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_start}
       {cursor_panel change_depth_colors_to_normal}
       {cursor_panel reset_normal_colors}
@@ -1687,7 +1687,7 @@
    (panels party_mode_choose_mode_panel meta)
    (focus party_mode_choose_mode_panel)
    (back party_mode_branch_screen)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_start})}
 {new
    HamPanel
@@ -1698,7 +1698,7 @@
    (helpbar_allow_controller TRUE)
    (back_token screen_name_save_return)
    (hide_letterbox FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {voice_input_panel activate_voice_context multiuser_seldiff_screen})
    (NAV_SELECT_MSG
       {switch
@@ -1733,7 +1733,7 @@
    (focus party_mode_options_seldiff_panel)
    (back party_mode_options_screen)
    (back_screen '')
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {party_mode_options_info_panel refresh})
    (on_voice_command
       ($command)
@@ -1804,7 +1804,7 @@
       {$this check_full_length_songs}
       {if
          {hamprovider get is_in_infinite_party_mode}})
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {$this refresh}
       {voice_input_panel activate_voice_context party_mode_options_screen})
    SELECT_RIGHT_LIST_TOKEN
@@ -1928,7 +1928,7 @@
    (handle_global_commands TRUE)
    (back_screen)
    (custom_enter FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_start}
       {party_mode_options_info_panel refresh}
       {infinite_party_mode_timeout_panel
@@ -1974,7 +1974,7 @@
    (hide_helpbar FALSE)
    (helpbar_allow_controller TRUE)
    (back_token screen_name_save_return)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {$this check_modes}
       {voice_input_panel activate_voice_context party_mode_mode_options_screen})
    (exit
@@ -2072,7 +2072,7 @@
    party_mode_mode_options_screen
    (panels background_panel party_mode_mode_options_panel party_mode_options_info_panel infinite_party_mode_timeout_panel meta)
    (focus party_mode_mode_options_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {meta music_start}
       {party_mode_options_info_panel refresh}
       {infinite_party_mode_timeout_panel

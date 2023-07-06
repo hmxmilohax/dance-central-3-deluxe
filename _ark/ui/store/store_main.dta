@@ -27,7 +27,7 @@
    (joypad
       (hold_ms 100)
       (repeat_ms 80))
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {right_hand.hnl
          set_provider
          {store_panel filter_provider}}
@@ -137,7 +137,7 @@
    (back
       {store_main_get_back_screen})
    (back_to_challenges 0)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {hamprovider set ui_nav_mode store})}
 {new
    HamScreen
@@ -150,7 +150,7 @@
    (should_back_to_challenges FALSE)
    (wait_until_rc_online FALSE)
    (timer kRockCentralConnectionTimeout)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {hamprovider set ui_nav_mode store}
       {dialog_panel set_msg store_loading FALSE}
       {if_else
@@ -292,7 +292,7 @@
    store_cart_empty_screen
    (panels background_confirmation_panel dialog_panel)
    (focus dialog_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {dialog_panel set_ok store_cart_empty FALSE})
    (NAV_SELECT_MSG
       {ui pop_screen})}
@@ -311,7 +311,7 @@
    (joypad
       (hold_ms 100)
       (repeat_ms 80))
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {platform_mgr
          add_sink
          $this
@@ -496,7 +496,7 @@
    store_redeem_token_panel
    (allow_voice_control FALSE)
    (redeeming_token FALSE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {platform_mgr
          add_sink
          $this
@@ -637,7 +637,7 @@
    (panels meta background_confirmation_panel store_panel dialog_panel)
    (focus dialog_panel)
    (error token_redemption_error)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {dialog_panel
          set_ok
          [error]
@@ -649,7 +649,7 @@
    store_cart_disabled_screen
    (panels background_confirmation_panel dialog_panel)
    (focus dialog_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {dialog_panel set_ok leaderboard_no_net FALSE})
    (NAV_SELECT_MSG
       {ui pop_screen})}

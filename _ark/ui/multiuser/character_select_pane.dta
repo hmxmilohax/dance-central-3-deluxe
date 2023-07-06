@@ -3,7 +3,7 @@
    character_select_pane
    (next_pane '')
    (back_pane '')
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       ($side)
       {multiuser_panel
          set_provider
@@ -106,7 +106,7 @@
 {new
    Object
    outfit_select_pane
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       ($side)
       {multiuser_panel set_list_dir $side list_asset}
       {multiuser_panel

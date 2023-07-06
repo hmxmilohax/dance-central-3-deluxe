@@ -7,7 +7,7 @@
    (back_token screen_name_title)
    (tertiary_token options)
    (allow_voice_control TRUE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {platform_mgr
          add_sink
          $this
@@ -190,7 +190,7 @@
    (focus main_panel)
    (back title_screen)
    (handle_global_commands TRUE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {voice_input_panel activate_voice_context main_screen})
    (curr_list_highlight 0)
    (TRANSITION_COMPLETE_MSG
@@ -254,7 +254,7 @@
    show_offers_need_to_sign_in_screen
    (panels meta background_confirmation_panel dialog_panel)
    (focus dialog_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {dialog_panel set_ok show_offers_need_to_sign_in FALSE})
    (NAV_SELECT_MSG
       {ui goto_screen main_screen})}
@@ -263,7 +263,7 @@
    challenges_need_to_sign_in_screen
    (panels meta background_confirmation_panel dialog_panel)
    (focus dialog_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {dialog_panel set_ok challenge_need_to_sign_in TRUE})
    (NAV_SELECT_MSG
       {ui goto_screen main_screen})}
@@ -272,7 +272,7 @@
    server_not_available_screen
    (panels meta background_confirmation_panel dialog_panel)
    (focus dialog_panel)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {dialog_panel set_ok store_error_store_server FALSE})
    (NAV_SELECT_MSG
       {ui goto_screen main_screen})}

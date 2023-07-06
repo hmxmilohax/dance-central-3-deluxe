@@ -13,7 +13,7 @@
    (joypad
       (hold_ms 100)
       (repeat_ms 80))
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {right_hand.hnl
          set_provider
          {store_panel offer_provider}}
@@ -204,7 +204,7 @@
    (showing_full FALSE)
    (pending_offer '')
    (list_mode TRUE)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {store_preview_mgr
          add_sink
          $this
@@ -424,7 +424,7 @@
    (panels background_confirmation_panel dialog_panel)
    (focus store_panel)
    (helpbar_confirm_label none)
-   (enter
+   (enter DX_NO_MENU_MOTIONBLUR 
       {dialog_panel set_msg store_reenum FALSE}
       {store_panel start_reenum_if_needed})
    (reenum_finished
