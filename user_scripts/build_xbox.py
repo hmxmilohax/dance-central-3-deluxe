@@ -10,4 +10,4 @@ if not download_mackiloha():
     sys.exit(1)
 
 if build_patch_ark(True):
-    print("You may find the files needed to place on your Xbox 360 in /_build/Xbox/.")
+    print("You may find the files needed to place on your Xbox 360 in /_build/.")
