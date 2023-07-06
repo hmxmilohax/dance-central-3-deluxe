@@ -1,0 +1,7 @@
+#define DX_NO_MENU_MOTIONBLUR
+(
+   {$this iterate PostProc $p {$p set motion_blur_velocity 0}}
+   {$this iterate PostProc $p {$p set motion_blur_blend 0}}
+   {$this iterate PostProc $p {$p set motion_blur_weight 0}}
+   {$this iterate PostProc $p {$p set motion_blur_exposure 0}}
+)
