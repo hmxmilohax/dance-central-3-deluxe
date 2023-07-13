@@ -53,6 +53,8 @@
 
 ### ✅ ***Dance Central 3 Deluxe is now installed!***
 
+<br/>
+
 ***Sidenote:*** We also recommend **clearing your system cache** if this is your first time installing the mod.
 * Navigate to `System Settings > Storage` and press `Y` to clear the system cache.*
 
