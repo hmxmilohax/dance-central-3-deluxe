@@ -8,6 +8,10 @@
 
 ### 📥 [Download Now!](https://github.com/hmxmilohax/dance-central-3-deluxe#%EF%B8%8F-what-youll-need)
 
+<br/>
+
+<img src="dependencies/images/dc3dx.gif" width="100%" alt="DC3DX">
+
 </div>
 <br/>
 
