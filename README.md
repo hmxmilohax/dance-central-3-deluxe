@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="dependencies/header.png" width="100%" alt="Header Image">
+<img src="dependencies/images/header.png" width="100%" alt="Header Image">
 
 ## *Dance Central 3 Deluxe* is a Quality-of-Life Improvement Mod by [MiloHax](https://github.com/hmxmilohax)
 
