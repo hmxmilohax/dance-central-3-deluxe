@@ -6,7 +6,9 @@
 
 ### This mod is currently very early in development, so there isn't much here right now.
 
-### 📥 [Download Now!](https://github.com/hmxmilohax/dance-central-3-deluxe#%EF%B8%8F-what-youll-need)
+### 👉 See [Current Feature List](#-current-feature-list)
+
+### 📥 [Download Now!](#%EF%B8%8F-what-youll-need)
 
 <br/>
 
