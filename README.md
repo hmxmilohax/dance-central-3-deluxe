@@ -2,7 +2,7 @@
 
 <img src="dependencies/header.png" width="100%" alt="Header Image">
 
-## *Dance Central 3 Deluxe* will be a Quality-of-Life Improvement Mod.
+## *Dance Central 3 Deluxe* is a Quality-of-Life Improvement Mod by [MiloHax](https://github.com/hmxmilohax)
 
 ### This mod is currently very early in development, so there isn't much here right now.
 
@@ -35,11 +35,6 @@
 ### 📥 [Dance Central 3 Deluxe for Xbox 360](https://nightly.link/hmxmilohax/dance-central-3-deluxe/workflows/build/main/DC3DX-Xbox.zip)
 
 > The most recent Nightly build of *Dance Central 3 Deluxe*.
-
-<br/>
-
-Continue to: 
-    - [Installing on Xbox 360](#-installing-on-xbox-360)
 
 <br/>
 
