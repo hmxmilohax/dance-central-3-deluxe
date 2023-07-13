@@ -26,13 +26,12 @@
 
 <br/>
 
-# 📥 Downloads
+# 📥 Download
 
 *Dance Central 3 Deluxe recieves very frequent updates. You can click the `Watch` button (All Activity) to be notified about any updates that occur.*
 
-## Xbox 360
 ![last updated:](https://img.shields.io/github/last-commit/hmxmilohax/dance-central-3-deluxe?label=last%20updated%3A)
-### 📥 [Dance Central 3 Deluxe for Xbox 360](https://nightly.link/hmxmilohax/dance-central-3-deluxe/workflows/build/main/DC3DX-Xbox.zip)
+### 📥 [Dance Central 3 Deluxe](https://nightly.link/hmxmilohax/dance-central-3-deluxe/workflows/build/main/DC3DX-Xbox.zip)
 
 > The most recent Nightly build of *Dance Central 3 Deluxe*.
 
@@ -47,7 +46,7 @@
 
 * **Disable updates** for Dance Central 3 in Aurora. *Dance Central 3 Deluxe* rolls `TU1` into its base installation.
 
-* Download [**Dance Central 3 Deluxe for Xbox 360**](https://nightly.link/hmxmilohax/dance-central-3-deluxe/workflows/build/main/DC3DX-Xbox.zip). 
+* Download [**Dance Central 3 Deluxe**](https://nightly.link/hmxmilohax/dance-central-3-deluxe/workflows/build/main/DC3DX-Xbox.zip). 
   * **Copy the contents of it to where your copy of Dance Central 3 is installed** (we recommend using FTP to do so).
   * Select `Yes` to overwrite the files if it asks you to.
 
