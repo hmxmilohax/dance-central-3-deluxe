@@ -11,8 +11,7 @@
    (pending_show_kinect_tuner FALSE)
    (back_token natal_troubleshooter)
    (tertiary_token title_screen_about)
-   (enter DX_NO_MENU_MOTIONBLUR  DX_NO_MENU_MOTIONBLUR DX_NO_MENU_MOTIONBLUR
-      {logo.tex set_bitmap "ui/title/logo_keep.png"}
+   (enter DX_NO_MENU_MOTIONBLUR
       {hamprovider set ui_nav_mode title}
       {platform_mgr
          add_sink
@@ -126,13 +125,13 @@
    HamScreen
    title_screen_to_voice_control_tutorial_screen
    (panels meta background_panel title_panel tutorial_nav_panel)
-   (enter DX_NO_MENU_MOTIONBLUR  DX_NO_MENU_MOTIONBLUR DX_NO_MENU_MOTIONBLUR
+   (enter DX_NO_MENU_MOTIONBLUR
       {enter_tutorial tutorial_voice_control_screen_0 FALSE})}
 {new
    HamPanel
    wait_for_saveload_panel
    (is_waiting TRUE)
-   (enter DX_NO_MENU_MOTIONBLUR  DX_NO_MENU_MOTIONBLUR DX_NO_MENU_MOTIONBLUR
+   (enter DX_NO_MENU_MOTIONBLUR
       {set
          [is_waiting]
          TRUE})
@@ -163,7 +162,7 @@
    (panels meta background_panel empty_postproc_panel wait_for_saveload_panel title_panel tutorial_nav_panel)
    (focus wait_for_saveload_panel)
    (go_to_party FALSE)
-   (enter DX_NO_MENU_MOTIONBLUR  DX_NO_MENU_MOTIONBLUR DX_NO_MENU_MOTIONBLUR
+   (enter DX_NO_MENU_MOTIONBLUR
       {saveload_mgr activate})
    (exit
       {set
@@ -220,7 +219,7 @@
    unlock_all_screen
    (panels meta background_confirmation_panel dialog_panel)
    (focus dialog_panel)
-   (enter DX_NO_MENU_MOTIONBLUR  DX_NO_MENU_MOTIONBLUR DX_NO_MENU_MOTIONBLUR
+   (enter DX_NO_MENU_MOTIONBLUR
       {dialog_panel set_ok unlock_all_description TRUE}
       {meta unlock_all})
    (NAV_SELECT_MSG
@@ -230,7 +229,7 @@
    unlock_classic1_screen
    (panels meta background_confirmation_panel dialog_panel)
    (focus dialog_panel)
-   (enter DX_NO_MENU_MOTIONBLUR  DX_NO_MENU_MOTIONBLUR DX_NO_MENU_MOTIONBLUR
+   (enter DX_NO_MENU_MOTIONBLUR
       {if_else
          {>
             {profile_mgr get_num_valid_profiles}
@@ -248,7 +247,7 @@
    unlock_classic2_screen
    (panels meta background_confirmation_panel dialog_panel)
    (focus dialog_panel)
-   (enter DX_NO_MENU_MOTIONBLUR  DX_NO_MENU_MOTIONBLUR DX_NO_MENU_MOTIONBLUR
+   (enter DX_NO_MENU_MOTIONBLUR
       {if_else
          {>
             {profile_mgr get_num_valid_profiles}
@@ -266,7 +265,7 @@
    unlock_classic3_screen
    (panels meta background_confirmation_panel dialog_panel)
    (focus dialog_panel)
-   (enter DX_NO_MENU_MOTIONBLUR  DX_NO_MENU_MOTIONBLUR DX_NO_MENU_MOTIONBLUR
+   (enter DX_NO_MENU_MOTIONBLUR
       {if_else
          {>
             {profile_mgr get_num_valid_profiles}
@@ -284,7 +283,7 @@
    unlock_classic4_screen
    (panels meta background_confirmation_panel dialog_panel)
    (focus dialog_panel)
-   (enter DX_NO_MENU_MOTIONBLUR  DX_NO_MENU_MOTIONBLUR DX_NO_MENU_MOTIONBLUR
+   (enter DX_NO_MENU_MOTIONBLUR
       {if_else
          {>
             {profile_mgr get_num_valid_profiles}
@@ -307,5 +306,5 @@
    augmented_photo_test_screen
    (panels meta background_panel augmented_photo_test_panel)
    (focus augmented_photo_test_panel)
-   (enter DX_NO_MENU_MOTIONBLUR  DX_NO_MENU_MOTIONBLUR DX_NO_MENU_MOTIONBLUR
+   (enter DX_NO_MENU_MOTIONBLUR
       {gesture_mgr set_identification_enabled FALSE})}
