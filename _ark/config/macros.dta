@@ -141,6 +141,9 @@
    (skyscraper) ;dc2 venue
    (mountainbasesun) ;dc2 venue
    (mountainbase) ;dc2 campaign venue
+   (bid) ;black venue
+   ;(glitterati) ;chairs venue
+   ;(arttest) ;broken venue
 )
 #define CHARACTERS
 ((emilia
