@@ -1925,6 +1925,7 @@
    (dj_intensity_rank 4)
    (year_released 2011))
 (gladyoucame
+   (alternate_path TRUE)
    (album_name "Battleground"))
 (gonnamakeyousweat
    (name
