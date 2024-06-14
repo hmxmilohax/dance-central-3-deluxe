@@ -41,7 +41,25 @@ parser.add_argument(
     "--no-updates", action="store_true", help="disable dx song updates"
 )
 
+parser.add_argument(
+    "--fun", action="store_true", help="break CI and annoy Dark at the same time"
+)
+
 args = parser.parse_args()
+
+def print_color_text(*args):
+    text = " ".join(map(str, args[:-1]))
+    color_code = args[-1]
+    print(f"\033[{color_code}m{text}\033[0m")
+
+if args.fun:
+    print_color_text(f" ____   ____ _____ ______  __", "1;35")  # pink text
+    print_color_text(f"|  _ \\ / ___|___ /|  _ \\ \\/ /", "1;35")  # pink text
+    print_color_text(f"| | | | |     |_ \\| | | \\  / ", "1;35")  # pink text
+    print_color_text(f"| |_| | |___ ___) | |_| /  \\ ", "1;35")  # pink text
+    print_color_text(f"|____/ \\____|____/|____/_/\\_\\ \n", "1;35")  # pink text
+
+
 
 gen_folder = "gen"
 
