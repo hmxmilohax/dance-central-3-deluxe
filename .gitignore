@@ -1,5 +1,8 @@
 .DS_Store
 *.pyc
+*.tmp
+*.ninja
+.ninja_log
 
 main_xbox
 patch_xbox
@@ -23,13 +26,5 @@ patch_xbox.hdr
 
 dx.dta
 
-dependencies/Mackiloha-master.zip
-dependencies/linux/arkhelper
-dependencies/linux/dtab
-dependencies/linux/superfreq
-dependencies/macOS/arkhelper
-dependencies/macOS/dtab
-dependencies/macOS/superfreq
-dependencies/windows/arkhelper.exe
-dependencies/windows/dtab.exe
-dependencies/windows/superfreq.exe
+obj
+out
