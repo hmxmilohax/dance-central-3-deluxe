@@ -89,9 +89,9 @@
 
 From here, you can make any personal modifications to the game or build it yourself.
 
-* Navigate to `windows_bats` if you're on Windows or `user_scripts` if you're on Linux.
-  * Run the `build_` script for your platform of choice to build *Dance Central 3 Deluxe*.
-  * Built contents will be in the `_build` folder on the root of the repo.
+* Open a CMD/Terminal window in your Dance Central 3 Deluxe folder
+  * type `python3 dependencies/python/configure_build.py xbox` then `ninja`.
+  * Built contents will be in the `out/xbox` folder on the root of the repo.
 
 <br/>
 
