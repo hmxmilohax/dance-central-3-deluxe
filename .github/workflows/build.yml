@@ -14,7 +14,9 @@ jobs:
           python-version: '3.11'
       - name: Build ARK
         run: |
+          chmod +x dependencies/python/configure_build.py
           dependencies/python/configure_build.py xbox
+          chmod +x dependencies/linux/ninja
           dependencies/linux/ninja
       - name: Remove .gitkeep
         run: |
