@@ -9,7 +9,7 @@ game_name = "Dance Central 3 Deluxe"
 
 ninja = ninja_syntax.Writer(open("build.ninja", "w+"))
 
-#versions
+#versions 
 #gh1, gh2 - " "
 #rb1, track packs - "-v 4"
 #rb2, tbrb, gdrb - "-v 5"
