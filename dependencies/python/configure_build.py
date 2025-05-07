@@ -179,6 +179,8 @@ def ark_file_filter(file: Path):
         return False
     if file.suffix.endswith("_xbox") and args.platform != "xbox":
         return False
+    if file.suffix.endswith("_xbox") and args.platform != "debug":
+        return False
     if file.suffix.endswith("_wii") and args.platform != "wii":
         return False
     if file.suffix.endswith("mogg") and args.platform == "ps2":
@@ -200,7 +202,7 @@ for f in filter(ark_file_filter, Path("_ark").rglob("*")):
                 *f.parent.parts[1:]
             )
             match args.platform:
-                case "xbox":
+                case ["xbox", "debug"]:
                     target_filename = Path(gen_folder, f.stem + ".png_xbox")
                     xbox_directory = Path("obj", args.platform, "ark").joinpath(
                         *f.parent.parts[1:]
