@@ -1,7 +1,7 @@
 {new
    Object
    startgame_pane
-   (enter DX_NO_MENU_MOTIONBLUR 
+   (enter 
       ($side)
       {multiuser_panel set_ready $side FALSE}
       {multiuser_panel update_startgame_list_for_blacklight $side}

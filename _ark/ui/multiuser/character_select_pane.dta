@@ -3,7 +3,7 @@
    character_select_pane
    (next_pane '')
    (back_pane '')
-   (enter DX_NO_MENU_MOTIONBLUR 
+   (enter 
       ($side)
       {multiuser_panel
          set_provider
