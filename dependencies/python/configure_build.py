@@ -71,9 +71,13 @@ ninja.variable("miloVersion", miloVersion)
 if new_gen == True:
     hdr_name = hdr_name + "_" + args.platform
 
-if args.platform not in ["xbox"]:
+if args.platform not in ["xbox", "debug"]:
     print("Unsupported platform. Only 'xbox' is supported.")
     sys.exit()
+
+if args.platform == "debug":
+    patchcreator = True
+    hdr_name = "main"
 
 print(f"Configuring {game_name}...")
 print(f"Platform: {args.platform}")
@@ -117,6 +121,8 @@ match sys.platform:
 match args.platform:
     case "xbox":
         out_dir = Path("out", args.platform, gen_folder)
+    case "debug":
+        out_dir = Path("out", args.platform, gen_folder)
 
 #building an ark
 if patchcreator == False:
@@ -135,11 +141,11 @@ if patchcreator == True:
     hdr_name = "main"
     #append platform if this is new style ark
     if new_gen == True:
-        hdr_name = hdr_name + "_" + args.platform
+        hdr_name = hdr_name + "_" + "xbox"
     #this is fucking hilarious
     exec_path = "README.md"
     match args.platform:
-        case "xbox":
+        case "debug":
             hdr_path = "platform/" + args.platform + "/" + gen_folder + "/" + hdr_name + ".hdr"
     ninja.rule(
         "ark",
@@ -261,6 +267,9 @@ if patchcreator == True:
     ark_part = new_ark_part
 match args.platform:
     case "xbox":
+        hdr = str(Path("out", args.platform, hdr_name + ".hdr"))
+        ark = str(Path("out", args.platform, hdr_name + "_" + ark_part + ".ark"))
+    case "debug":
         hdr = str(Path("out", args.platform, hdr_name + ".hdr"))
         ark = str(Path("out", args.platform, hdr_name + "_" + ark_part + ".ark"))
 ninja.build(
