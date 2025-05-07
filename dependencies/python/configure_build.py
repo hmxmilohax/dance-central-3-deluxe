@@ -177,9 +177,7 @@ def ark_file_filter(file: Path):
         return False
     if file.suffix.endswith("_ps3") and args.platform != "ps3":
         return False
-    if file.suffix.endswith("_xbox") and args.platform != "xbox":
-        return False
-    if file.suffix.endswith("_xbox") and args.platform != "debug":
+    if file.suffix.endswith("_xbox") and args.platform not in ("xbox", "debug"):
         return False
     if file.suffix.endswith("_wii") and args.platform != "wii":
         return False
