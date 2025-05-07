@@ -146,7 +146,7 @@ if patchcreator == True:
     exec_path = "README.md"
     match args.platform:
         case "debug":
-            hdr_path = "platform/" + args.platform + "/" + gen_folder + "/" + hdr_name + ".hdr"
+            hdr_path = Path("platform", args.platform, gen_folder, hdr_name + ".hdr")
     ninja.rule(
         "ark",
         f"$arkhelper patchcreator -a {ark_dir} -o {out_dir} {hdr_path} {exec_path} --logLevel error",
