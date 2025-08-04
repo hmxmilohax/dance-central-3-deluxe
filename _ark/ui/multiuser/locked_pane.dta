@@ -3,7 +3,7 @@
    locked_pane
    (back_pane_s0 '')
    (back_pane_s1 '')
-   (enter DX_NO_MENU_MOTIONBLUR 
+   (enter 
       ($side)
       {multiuser_panel set_provider $side locked.hnp}
       {multiuser_panel set_list_dir $side label_checkbox})

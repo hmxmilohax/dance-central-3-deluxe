@@ -66,7 +66,7 @@
       {letterbox
          add_sink
          $this
-         (enter DX_NO_MENU_MOTIONBLUR _blacklight_mode)}
+         (enter _blacklight_mode)}
       {letterbox
          add_sink
          $this

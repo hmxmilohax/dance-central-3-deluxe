@@ -1,7 +1,7 @@
 {new
    Object
    readywait_pane
-   (enter DX_NO_MENU_MOTIONBLUR 
+   (enter 
       ($side)
       {multiuser_panel set_list_dir $side label_checkbox}
       {if_else
