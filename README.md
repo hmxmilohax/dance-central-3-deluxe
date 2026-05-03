@@ -105,4 +105,4 @@ From here, you can make any personal modifications to the game or build it yours
 
 [Mackiloha](https://github.com/PikminGuts92/Mackiloha) - ArkHelper for building Deluxe
 
-[dtab](https://github.com/mtolly/dtab) - For serializing `.dtb` script files 
+[dtab](https://github.com/mtolly/dtab) - For serializing `.dtb` script files
