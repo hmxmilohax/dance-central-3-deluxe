@@ -4,7 +4,7 @@
 
 ## *Dance Central 3 Deluxe* is a Quality-of-Life Improvement Mod by [MiloHax](https://github.com/hmxmilohax)
 
-### This mod is currently very early in development, so there isn't much here right now.
+### This mod is currently not in development, there isn't much here, and support is minimal.
 
 ### 👉 See [Current Feature List](#-current-feature-list)
 
